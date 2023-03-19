@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+
+body {
+    font-family: Handlee, Michroma;
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+}
+
+p {
+    color: aquamarine;
+}
+
+.nav-link {
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(200, 201, 201);
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(200, 201, 201);
+}
+
+.sidebar {
+    color: aquamarine;
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+}
+
+.card {
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+    color: aquamarine;
+}
+
+.card a {
+text-decoration: none;
+color: aquamarine;
+}
+
+.slide-text, .footer-text {
+    color: aquamarine;
+    margin: auto auto;
+}
+
+.name-text {
+    font-size: 50px;
+    border-style: ridge;
+    border-color: aqua;
+    box-shadow:10px 5px 10px blue;
+    
+    
+    text-align: center;
+}
+
+.slide-text a {
+    text-decoration: none;
+    color: aqua;
+    text-shadow: blue 10px 4px 6px;
+}
+
+footer, .btn-outline-primary {
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: Call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes Call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
